@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+::selection{
+    color:rgb(141, 123, 102);
+    background:rgb(196, 191, 186);
+}
+header, section, footer, aside, nav, article, figure, figcaption {
+    display: block;
+}
+body{
+    color:#666666;
+    background-color: #f9f8f6;
+    background-image: url(images/dark-wood.jpg);
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+	line-height: 1.4em;
+	margin:0;
+    
+}
+.wrapper {
+    width: 940px;
+    margin: 20px auto 20px auto;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+header{
+    background-image: url(images/header.jpg);
+    height:160px;
+}
+
+h1{
+    width:940px;
+    text-indent: -9999px;
+    margin:0;
+    height:130px;
+}
+nav{
+    clear:both;
+    color: #ffffff;
+	background-color: rgb(174,172,168);
+	height: 30px;
+}
+nav ul{
+    margin:0 0 0 0;
+    list-style-type: none;
+    text-align: center;
+    padding: 5px 0px 0px 50px;
+}
+
+
+nav ul a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    text-decoration:none;
+    float:left;
+    justify-content: space-around;
+    margin-right:4%;
+}
+
+nav ul a.home, a:hover {
+    color:black;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+section.courses{
+    width:659px;
+    float:left;
+    border-right:1px solid rgb(238,238,238);
+}
+
+figure{
+    float:left;
+    border:1px solid transparent;
+    padding:5px;
+}
+
+figcaption{
+    text-align: center;
+    font-family: 'Kanit';
+    font-weight:bold;
+    color:#97928a;
+}
+
+article{
+    clear:both;
+    overflow:auto;
+    width:100%;
+}
+hgroup{
+    margin-top:40px;
+}
+
+hgroup h2{
+    font-family:cursive;
+    padding:0;
+}
+h3{
+    font-family: cursive;
+    font-weight:lighter;
+    font-size:20px;
+    color:rgb(187, 63, 47);
+}
+
+
+aside{
+    background:white;
+    width:260px;
+    float:left;
+    padding:0 0 13px 20px;
+}
+
+aside h2{
+    color:rgb(187, 63, 47);
+    font-weight:400;
+    margin:10px 0 5px 0;
+    padding:30px 0 13px 0;
+}
+
+aside section a{
+    text-decoration: none;
+    font-weight:500;
+    color:rgb(222,101,160);
+    border-bottom: 1px solid rgb(238,238,238);
+    display:block;
+    padding:10px;
+    transition:ease-in-out 250ms;
+}
+
+aside section a:hover{
+    color:rgb(197, 155, 100);
+    background:rgb(239,239,239);
+}
+
+aside section p{
+    margin:0;
+}
+footer{
+    clear:both;
+    color: #ffffff;
+	background-color: rgb(174,172,168);
+	height:30px;
+    font-size:12px;
+    padding-left:20px;
+}
+
+/*For Catering*/
+button.add{
+    margin-left:160px;
+    background:#BF6342;
+    width:100px;
+    height:50px;
+    transition:ease-in-out 300ms;
+    font-family: cursive;
+    font-weight: lighter;
+    color:bisque;
+}
+button.add:hover{
+    cursor:pointer;
+    background:#BF6342;
+    width:100px;
+    height:50px;
+    box-shadow: 0 0 5px #BF6342,
+    0 0 25px #BF6342,
+    0 0 50px rgb(231, 195, 225),
+    0 0 100px rgb(231, 195, 225);
+}
+
+button.add:active{
+    cursor:pointer;
+    background:#BF6342;
+    width:100px;
+    height:50px;
+    box-shadow: 0 0 5px #BF6342,
+    0 0 25px #BF6342,
+    0 0 50px rgb(231, 195, 225),
+    0 0 100px rgb(231, 195, 225);
+}
+.border-remove{
+    background:red;
+    position:relative;
+    border: 1px solid red;
+    width:200px;
+    height:80px;
+}
+
+.remove{
+    border:1px solid transparent;
+    color:black;
+    width: 100px;
+    height: 40px;
+    position: absolute; /* không có postion:absolute thì sẽ không thể điều chỉnh vị trí của box2 bên trong box1 */
+    font-weight: bold;
+    margin:25%;
+    z-index:9999;
+}
+
+.remove::before{
+    content:"----------->";
+    display:block;
+    position:absolute;
+    text-align: center;
+}
+

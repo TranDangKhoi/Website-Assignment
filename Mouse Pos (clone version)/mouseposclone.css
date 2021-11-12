@@ -1,0 +1,114 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+::selection{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+body{
+    background: black;
+    margin:0;
+    font-family:'Oswald', 'Futura', sans-serif;
+    color:white;
+    padding:0;
+}
+
+.stats{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background:#6CC0AC;
+    height:66px;
+    padding:10px;
+    line-height:70px;
+}
+
+span{
+    color:#6CC0AC;
+    border-right:1px solid white;
+    border-left: 1px solid white;
+    margin-left:20px;
+    margin-right:15px;
+    font-family:'Oswald';
+    font-weight:lighter;
+}
+
+input[type='text'],textarea:focus{
+    margin:8px;
+    height:40px;
+    width:90px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background:white;
+    font-size:25px;
+    font-family:'Oswald';
+    color:#666666;
+}
+
+input[type='text']:focus,textarea:focus{
+    background:white;
+    border: 1px solid white;
+    outline:none;
+}
+.page{
+    background:#403C3B;
+    width:30%;
+    margin-left:659px;
+    margin-top:50px;
+}
+
+
+h1{
+    cursor:pointer;
+    text-align:center;
+    background-image: url(images/kinglogo.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    text-indent: -999%;
+    line-height: 35px;
+    margin:0 auto 0 auto;
+    padding:20px;
+    transition:ease-in-out 300ms;
+}
+
+h1:hover{
+    line-height:60px;
+}
+
+h2{
+    font-family:sans-serif;
+    letter-spacing:6px;
+    font-weight:normal;
+    text-transform: uppercase;
+    text-align:center;
+}
+ul{
+    border:none;
+    padding:0;
+    margin:0;
+    list-style: none;
+    background:#EC8B68;
+}
+
+li{
+    text-indent:15px;
+    height:50px;
+    display:block;
+    font-size:25px;
+    padding-bottom:10px;
+    font-family: 'Oswald';
+    transition:ease-out 300ms;
+}
+
+li:hover{
+    text-indent:0px;
+    cursor:pointer;
+    background:rgb(34, 30, 30);
+    display:block;
+    margin:0;
+    text-shadow:4px 4px 4px coral;
+}
+
