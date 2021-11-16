@@ -84,6 +84,7 @@ h2{
     font-weight:normal;
     text-transform: uppercase;
     text-align:center;
+    cursor:default;
 }
 ul{
     border:none;
