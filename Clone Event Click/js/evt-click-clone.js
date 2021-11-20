@@ -18,14 +18,28 @@ elClose.addEventListener('click',dismissNote,false); // remove pop-up khi click 
 
 /* For username */
 
+document.getElementById('submit').onmouseover = function(){
+    if (username.value.length >= 5){
+        document.getElementById('submit').style.backgroundColor = "rgb(167, 69, 69)";
+    }
+}
+
+document.getElementById('submit').onmouseleave = function(){
+    if (username.value.length >= 5){
+        document.getElementById('submit').style.backgroundColor = "rgb(211, 96, 96)";
+    }
+}
+
 
 function checkEmail(){
     elMsg = document.getElementById("feedback");
-    if (username.value.length < 5){
-        elMsg.textContent = "Your username should be more than 5 characters long";
+    if (username.value.length >= 5){
+        elMsg.textContent = "";
+        document.getElementById('submit').style.backgroundColor = "rgb(211, 96, 96)";
     }
     else{
-        elMsg.textContent = "";
+        elMsg.textContent = "Your username should be more than 5 characters long";
+        document.getElementById('submit').style.backgroundColor = "rgb(160, 138, 138)";
     }
 }
 
@@ -36,6 +50,5 @@ function checkReq(){
 }
 
 var username = document.getElementById('username');
-var signin = document.getElementById('submit');
 
 username.addEventListener('blur',checkEmail,false);

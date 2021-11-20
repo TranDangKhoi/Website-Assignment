@@ -92,7 +92,7 @@ input[type="submit"]{
     display:block;
     padding:17px;
     width:120px;
-    background:rgb(211, 96, 96);
+    background:rgb(160, 138, 138);
     color:white;
     border:1px solid transparent;
     border-radius: 2px;
@@ -105,7 +105,11 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-    background:rgb(172, 75, 75);
+    background:rgb(167, 69, 69);
+}
+
+#signinhv{
+    background:rgb(167, 69, 69);
 }
 
 

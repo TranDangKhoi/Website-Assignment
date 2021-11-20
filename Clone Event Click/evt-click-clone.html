@@ -13,12 +13,12 @@
         <h2>Login to your account</h2>
     <form action="#">
         <label for="username">Your username: </label>
-        <input type="text" id="username" maxlength="70"> 
+        <input type="text" autocomplete="off" id="username" maxlength="70"> 
         <div id="feedback"></div>
         <label for="password">Your password: </label>
         <input type="password" id="password">
     </form>
-    <input type="submit" id="submit" onclick="checkReq()" value="Sign in">
+    <input type="submit" id="submit" onclick="checkReq()" onmouseover="changeWhenHover()" value="Sign in">
     </div>
 <script src="js/evt-click-clone.js"></script>
 </body>
