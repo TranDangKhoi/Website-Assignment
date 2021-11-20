@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Open+Sans+Condensed:ital,wght@1,300&family=Oswald:wght@200;300;400;500&display=swap');
 ::selection{
     background:rgba(64,60,59,.50);
     color:rgb(224, 214, 214);
@@ -51,7 +51,7 @@ h1:hover{
     color:white;
     text-align: center;
     letter-spacing: 5px;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;;
     text-shadow: 3px 3px 1px black;
 }
 
@@ -70,12 +70,24 @@ label{
     font-size: 24px;
 }
 
-input[type="text"],input[type="password"]{
+input[type="text"]{
     border:1px solid transparent;
     border-radius:3px;
     background:#999999;
     width:300px;
-    height:30px;
+    height:22px;
+    font-family: "Oswald", sans-serif;;
+    font-size:20px;
+    outline:none;
+    transition:ease-in 160ms;
+}
+
+input[type="password"]{
+    border:1px solid transparent;
+    border-radius:3px;
+    background:#999999;
+    width:300px;
+    height:35px;
     font-family: "Oswald";
     font-size:20px;
     outline:none;
@@ -107,11 +119,6 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background:rgb(167, 69, 69);
 }
-
-#signinhv{
-    background:rgb(167, 69, 69);
-}
-
 
 
 #feedback{
