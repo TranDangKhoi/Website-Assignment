@@ -60,10 +60,10 @@ function checkPassword(){
 
 var signin = document.getElementById('submit');
 
-username.addEventListener('blur',checkEmail,false);
-password.addEventListener('blur',checkPassword,false);
-username.addEventListener('blur',checkBoth,false);
-password.addEventListener('blur',checkBoth,false);
+username.addEventListener('keyup',checkEmail,false);
+password.addEventListener('keyup',checkPassword,false);
+username.addEventListener('keyup',checkBoth,false);
+password.addEventListener('keyup',checkBoth,false);
 /* Change sign in background button when both of username and password met the requirements */
 
 function checkBoth(){
@@ -78,7 +78,7 @@ function checkBoth(){
 /* check xem da du dieu kien chua moi cho chuyen trang */
 function checkReq(){
     if (username.value.length >= 7 && password.value.length >= 8 ){
-        window.location.href = "https://github.com/TranDangKhoi";
+        window.location.href = "https://github.com/TranDangKhoi/Website-Assignment";
     }
 }
 /* check inspect disablity even though i know it meaningless */
