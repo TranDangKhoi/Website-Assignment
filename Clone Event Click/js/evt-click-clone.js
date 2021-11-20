@@ -35,7 +35,7 @@ function checkReq(){
     }
 }
 
-var username = document.getElementById('email');
+var username = document.getElementById('username');
 var signin = document.getElementById('submit');
 
 username.addEventListener('blur',checkEmail,false);
