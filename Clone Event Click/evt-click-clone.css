@@ -129,6 +129,14 @@ input[type="submit"]:hover{
     padding: 10px 0 0 22px;
 }
 
+#feedback2{
+    color:white;
+    background-image: url(images/warning.png);
+    background-repeat: no-repeat;
+    background-position: 2px 14px;
+    padding: 10px 0 0 22px;
+}
+
 #note{
     -webkit-user-select: none;
     user-select: none;
