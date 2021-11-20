@@ -28,7 +28,14 @@ function checkEmail(){
         elMsg.textContent = "";
     }
 }
+
+function checkReq(){
+    if (username.value.length >= 5){
+        window.location.href = "https://github.com/TranDangKhoi";
+    }
+}
+
 var username = document.getElementById('email');
 var signin = document.getElementById('submit');
 
-signin.addEventListener('click',checkEmail,false);
+username.addEventListener('blur',checkEmail,false);
