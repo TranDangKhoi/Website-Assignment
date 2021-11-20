@@ -19,13 +19,13 @@ elClose.addEventListener('click',dismissNote,false); // remove pop-up khi click 
 /* For username */
 
 document.getElementById('submit').onmouseover = function(){
-    if (username.value.length >= 5){
+    if (username.value.length >= 7){
         document.getElementById('submit').style.backgroundColor = "rgb(167, 69, 69)";
     }
 }
 
 document.getElementById('submit').onmouseleave = function(){
-    if (username.value.length >= 5){
+    if (username.value.length >= 7){
         document.getElementById('submit').style.backgroundColor = "rgb(211, 96, 96)";
     }
 }
@@ -33,7 +33,7 @@ document.getElementById('submit').onmouseleave = function(){
 
 function checkEmail(){
     elMsg = document.getElementById("feedback");
-    if (username.value.length >= 5){
+    if (username.value.length >= 7){
         elMsg.textContent = "";
         document.getElementById('submit').style.backgroundColor = "rgb(211, 96, 96)";
     }
@@ -44,7 +44,7 @@ function checkEmail(){
 }
 
 function checkReq(){
-    if (username.value.length >= 5){
+    if (username.value.length >= 7){
         window.location.href = "https://github.com/TranDangKhoi";
     }
 }
