@@ -38,7 +38,7 @@ function checkEmail(){
         document.getElementById('submit').style.backgroundColor = "rgb(211, 96, 96)";
     }
     else{
-        elMsg.textContent = "Your username should be more than 5 characters long";
+        elMsg.textContent = "Your username should be more than 7 characters long";
         document.getElementById('submit').style.backgroundColor = "rgb(160, 138, 138)";
     }
 }
